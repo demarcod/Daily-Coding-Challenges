@@ -11,17 +11,26 @@ Bonus: Can you do this in one pass?
 */
 #include<iostream>
 #include<vector>
+#include<map>
 
 using namespace std;
 
 string doesAdd(vector<int>& nums, int k){
-    return nums.empty() ? "true" : "false";
+    map<int, int> memo;
+    for(int i = 0; i < nums.size(); i++){
+        if(memo.find(k - nums[i]) != memo.end()){
+            return "true";
+        }
+        memo[nums[i]] = i;
+    }
+
+    return "false";
 }
 
 int main()
 {
-    vector<int> thing = {};
-    string result = doesAdd(thing, 9);
+    vector<int> thing = {10, 15, 3, 7};
+    string result = doesAdd(thing, 17);
     cout << result << endl;
     return 0;
 }
