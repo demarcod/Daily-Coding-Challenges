@@ -1,6 +1,6 @@
 # Daily-Coding-Challenges
 
-Trying to keep my skills shard by doing a coding challenge a day.
+Trying to keep my skills sharp by doing a coding challenge a day.
 
 As of now, I'm mainly getting these questions from daily coding subscriptions (i.e. [Daily Coding Problem](https://www.dailycodingproblem.com/) & [Daily Byte](https://thedailybyte.dev/)), but am hoping to come up with my own questions as I get more familiar with solving complex algorithm problems.
 
